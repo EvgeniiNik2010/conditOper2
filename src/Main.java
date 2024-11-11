@@ -8,25 +8,27 @@ public class Main {
         } else {
             if (clientOS == 0) {
                 System.out.println("Установите версию приложения для iOS по ссылке");
-            }
+            }else
+                System.out.println("Ничего не установить");
         }
+
         System.out.println("Задача 2");
 
-        int tel = 2017;
+        int clientDeviceYear = 2016;
         int clientOS1 = 1;
-        if (tel < 2015 && clientOS1 == 1) {
+        if (clientDeviceYear < 2015 && clientOS1 == 1) {
             System.out.println("Установите облегченную версию приложения для Android по ссылке");
-        } else {
-            if (tel < 2015 && clientOS1 == 0) {
+        } else
+            if (clientDeviceYear < 2015 && clientOS1 == 0) {
                 System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            } else {
-                if (tel >= 2015 && clientOS1 == 1) {
+            } else
+                if (clientDeviceYear >= 2015 && clientOS1 == 1) {
                     System.out.println("Установите версию приложения для Android по ссылке");
-                } else if (tel >= 2015 && clientOS1 == 0) {
+                } else if (clientDeviceYear >= 2015 && clientOS1 == 0) {
                     System.out.println("Установите версию приложения для iOS по ссылке");
                 }
-            }
-        }
+
+
         System.out.println("Задача 3");
         int year = 2024;
         if(year%400==0){
@@ -49,27 +51,27 @@ public class Main {
             System.out.println("Доставки нет");
         }
         System.out.println("Задача 5");
-        int monNum = 9;
-        switch (monNum){
+        int monthNumber = 12;
+        switch (monthNumber ){
+            case 12:
             case 1:
             case 2:
-            case 3:
                 System.out.println("Принадлежит сезону зима");
                 break;
+            case 3:
             case 4:
             case 5:
-            case 6:
                 System.out.println("Принадлежит сезону весна");
                 break;
+            case 6:
             case 7:
             case 8:
-            case 9:
-                System.out.println("Принадлежит сезону осень");
+                System.out.println("Принадлежит сезону лето");
                 break;
+            case 9:
             case 10:
             case 11:
-            case 12:
-                System.out.println("Принадлежит сезону лето");
+                System.out.println("Принадлежит сезону осень");
                 break;
             default:
                 System.out.println();
